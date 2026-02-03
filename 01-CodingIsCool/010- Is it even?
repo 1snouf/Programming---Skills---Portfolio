@@ -1,0 +1,19 @@
+# 10-IsItEven/main.py
+
+def check_even_or_odd(n: int) -> str:
+    if n % 2 == 0:
+        return f"{n} is even."
+    return f"{n} is odd."
+
+def main():
+    user_input = input("Enter a number: ").strip()
+
+    if user_input.lstrip("-").isdigit():
+        num = int(user_input)
+        message = check_even_or_odd(num)
+        print(message)
+    else:
+        print("Invalid input. Please enter a whole number.")
+
+if __name__ == "__main__":
+    main()
