@@ -1,0 +1,16 @@
+# 08-SimpleSearch/main.py
+
+names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]
+
+search_term = input("Enter a name to search for: ").strip()
+
+found = False
+for name in names:
+    if name.lower() == search_term.lower():
+        found = True
+        break
+
+if found:
+    print(f"{search_term} was found in the list!")
+else:
+    print(f"{search_term} was NOT found in the list.")
