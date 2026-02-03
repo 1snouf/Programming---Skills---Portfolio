@@ -1,0 +1,19 @@
+# 06-BruteForceAttack/main.py
+
+correct_password = "12345"
+max_attempts = 5
+attempts = 0
+
+while attempts < max_attempts:
+    guess = input("Enter the password: ").strip()
+    attempts += 1
+
+    if guess == correct_password:
+        print("Access granted. Correct password!")
+        break
+    else:
+        remaining = max_attempts - attempts
+        if remaining > 0:
+            print(f"Wrong password. Attempts remaining: {remaining}")
+        else:
+            print("Maximum attempts reached. Authorities have been alerted.")
