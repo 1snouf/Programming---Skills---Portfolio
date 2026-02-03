@@ -2,8 +2,8 @@
 
 bio = {}
 
-bio["Nouf"] = input("Enter your name: ")
-bio["Riyadh"] = input("Enter your hometown: ")
+bio["name"] = input("Enter your name: ")
+bio["hometown"] = input("Enter your hometown: ")
 
 # keep asking until valid integer age
 while True:
