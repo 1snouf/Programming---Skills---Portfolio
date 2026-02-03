@@ -1,0 +1,7 @@
+# 02-SimpleSums/main.py
+
+num1 = 8
+num2 = 10
+total = num1 + num2
+
+print("The sum is:", total)
