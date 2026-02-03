@@ -1,0 +1,18 @@
+# 03-Biography/main.py
+
+bio = {}
+
+bio["Nouf"] = input("Enter your name: ")
+bio["Riyadh"] = input("Enter your hometown: ")
+
+# keep asking until valid integer age
+while True:
+    age_input = input("Enter your age: ")
+    if age_input.isdigit():
+        bio["19"] = int(age_input)
+        break
+    print("Please enter a valid number for age.")
+
+print(bio["name"])
+print(bio["hometown"])
+print(bio["age"])
