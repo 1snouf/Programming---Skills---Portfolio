@@ -1,0 +1,28 @@
+# 04-PrimitiveQuiz/main.py
+
+questions = {
+    "France": "Paris",
+    "Italy": "Rome",
+    "Spain": "Madrid",
+    "Germany": "Berlin",
+    "Portugal": "Lisbon",
+    "Netherlands": "Amsterdam",
+    "Belgium": "Brussels",
+    "Austria": "Vienna",
+    "Greece": "Athens",
+    "Sweden": "Stockholm"
+}
+
+score = 0
+
+for country, correct_capital in questions.items():
+    user = input(f"What is the capital of {country}? ").strip()
+
+    # ignore capitalization
+    if user.lower() == correct_capital.lower():
+        print("Correct!")
+        score += 1
+    else:
+        print(f"Wrong. The correct answer is {correct_capital}.")
+
+print(f"\nFinal Score: {score}/{len(questions)}")
